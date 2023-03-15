@@ -1,0 +1,327 @@
+@charset"utf-8";
+*{ box-sizing: border-box;
+padding:0}
+.dh{
+	width:60%;
+	height:60px;
+	background: white;
+	border:1px solid black ;
+	position: fixed;
+}
+.dh ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width:100%;
+	display:inline-block;
+	text-align: center;
+	border:1px solid black ;
+}
+.dh ul li{/*导航栏的设置*/
+	border:1px solid black ;
+	text-align: center;
+	display:inline-block;
+}
+.dh ul li a{/*导航栏链接设置*/
+	color:rgb(48,48,48);
+	width:100px;
+	height:50px;
+	padding: 10px 10px;
+	top:1px;
+	right:30px;;
+	text-decoration:none;/*列表样式*/
+	display:inline-block;/*融合行内与块级*/
+	background-color:rgb(192,192,192);
+}
+.header{
+	width:100%;
+	height:400px;
+	background-attachment: fixed;
+	text-align: center;
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	background:url('../img/图片/programming.jpg')no-repeat 5px 5px;/
+	overflow: hidden;
+	margin:10px auto;
+}
+.header img{
+	width:1000px;
+	height:600px;
+}
+.font{
+	font-size:50px;
+	font-weight:100px;
+	display: block;
+	color: white;
+	position: absolute;
+	top:30%;
+	width:100%;
+	transform:translate(0,-50%);
+}
+.button1{/*按钮*/
+		position:absolute;
+		border:1px solid 6699FF;
+		color:white;
+		background-color: black;
+        padding:5px 5px;
+		margin-left: 500px;
+		margin-bottom: 400px;
+		/* 添加标准文本 */
+		text-decoration: none;
+
+	}
+	.button1 a{
+		display:none;
+		width:19px;
+		height:16px;
+		background-color:white;
+	}
+	.button1 a :hover{
+		display:block;
+		cursor:pointer;
+	}
+.blue{color:blue;font-size:1em;text-align: center;text-decoration: underline blue;}/*设置字体和下划线*/
+.picture1 {/*图片放大*/
+	width:1200px;
+	height:600px;
+	overflow: hidden;
+	margin:10px auto;
+	}
+	.picture1 p{
+		
+		float:right;/*添加右浮动*/
+		width: 40%;
+		height: 400px;
+	}
+	.picture1 img{
+		margin-right: 30px;
+		float:right;/*添加左浮动*/
+		width: 40%;
+		height: 400px;
+		transition:all 0.5s;/*添加过渡效果，对宽高有一个0.5秒的过度*/
+	}
+.picture1 img:hover{
+		transform:scale(1.1);/*当鼠标经过div里的图片时，图片宽高变为原来的1.2倍*/
+		cursor:pointer;/*鼠标变成一只手*/
+	}
+	.picture2{/*设置图片背景*/
+	    background-attachment: fixed;/*背景图片不会随着页面的滚动而滚动。*/
+		background-size: 2000px;
+		background-origin: border-box;/*将背景图片的坐标原点设置在盒模型border-box区域的左上角*/
+		background:url('../img/图片/heardone.jfif')no-repeat 5px 5px;/*设置背景图像不重复。*/
+		background-size: cover;
+		overflow: hidden;
+		margin:10px auto;
+		width: 1200px;
+	}
+	.picture2 img{
+		width:100px;
+		height:100px;
+		border-radius: 50%;
+		display: block;
+		margin:10px auto;
+	}
+	.picture2_box2{
+		/* 放图片及文字 */
+		background-color:white;
+		width:300px;
+		height:350px;
+		border-width: 1px 1px 1px 1px;
+		border-style:solid;
+		border-color: black;
+		padding:2px 4px; 
+		margin:25px;
+		border-radius:25px;
+		float:right;
+		box-sizing: border-box;
+		margin-left: 250px;
+	}
+		.picture2_box2 p{
+			margin:0px;
+		}
+	.container{
+		width:1800px;
+		height:800px;
+		background-color: aliceblue;
+		margin: 10px auto;;
+	}
+	.picture3{/*图片*/
+	    position: relative;
+		width: 300px;
+        height: 300px;
+		border:1px solid;
+		float:left;
+		overflow:hidden;
+		transition: all .5s ease-in-out;
+		margin:10px auto;
+	}
+	
+	.picture3 img{
+		width: 100%;
+		height:100%;
+		position: relative;
+		float:left;
+		transition:all 0.5s;
+	}
+	.picture3 img:hover {
+		transform:scale(1.1);
+		cursor:pointer;
+	}
+	.hide{
+		 background-color: dimgray;
+		 display: none;
+	}
+	.button2{/*按钮*/
+		position:absolute;`	
+		border:1px solid 6699FF;
+		color:white;
+		border-radius: 8px;
+		background-color: dodgerblue;
+		text-align: center;
+        padding:10px 20px;
+		/* 添加标准文本 */
+		text-decoration: none;
+		display:none;
+		font-size:12px;
+	}
+	.button2 a{
+		display:none;
+		width:19px;
+		height:16px;
+		background-color:white;
+		
+	}
+	.button2 a :hover{
+		display:block;
+		cursor:pointer;
+	}
+	/* 小组精神 */
+	.picture4{
+		background-attachment: fixed;/*背景图片不会随着页面的滚动而滚动。*/
+		background-size: 2000px;
+		background-origin: border-box;/*将背景图片的坐标原点设置在盒模型border-box区域的左上角*/
+		background:url('../img/图片/middle.jpg')no-repeat 5px 5px;/*设置背景图像不重复。*/
+		background-size: cover;
+		overflow: hidden;
+		margin:10px auto;
+		width: 1200px;
+	}
+	.box{
+		width:400px;
+		height:400px;
+		border:1px solid black;
+		float:right;
+		background-color: aliceblue;
+		color:grey;
+	    margin:25px;
+		box-sizing: border-box;
+		}
+	.box img{
+			width:90px;
+			height:90px;
+			display: block;
+			position: relative;
+			margin:10px auto;
+			transition: all 0.5s;
+		}
+	.box p{
+		margin-top: 15px;;
+		margin:0px;
+		text-align: center;
+		}
+		.box img :hover{
+			position: absolute;
+			background: chocolate;
+		}
+		/* 小组新闻 */
+		.new_container{
+			width:500px;
+			height:500px;
+			background-color: aliceblue;
+			margin: 10px auto;;
+		}
+		.news{
+			width:40%;
+			height:40%;
+			border:1px solid black;
+			float:right;
+			background-color: aliceblue;
+			color:grey;
+		    margin:25px;
+			box-sizing: border-box;
+			}
+			.news img{
+				width:100%;
+				height:100%;
+				display: block;
+				opacity:1;
+				margin:10px auto;
+				transition: all 0.5;
+			}
+			.news img :hover{
+			 opacity:0.4;
+		      box-shadow: 1px 1px 10px grey, 2px 2px 3px grey, 3px 3px 3px grey;
+
+			}
+			.new_font{
+				font-size:50px;
+				font-weight:100px;
+				display: block;
+				color: white;
+				position: absolute;
+				top:30%;
+				width:100%;
+				transform:translate(0,-50%);
+			}
+		.button3_box{
+			width:1000px;
+			height:50px;
+			margin: 10px auto;
+		}
+		.button3{/*按钮*/
+		    width:100px;
+			position:absolute;
+			border:1px solid 6699FF;
+			color:white;
+			border-radius: 8px;
+			background-color:blue;
+			text-align: center;
+		    padding:10px 20px;
+			/* 添加标准文本 */
+			text-decoration: none;
+			margin-left: 400px;
+		}
+		.button3 a{
+			width:19px;
+			height:16px;
+			background-color:white;
+		}
+		.button3 a :hover{
+			display:block;
+			cursor:pointer;
+		}
+		.buttom{
+			width:100%;
+			height:600px;
+		    background-color: lightslategray;
+			color: aliceblue;
+			font-weight: 500;
+		}
+		.buttom img{
+			width:100px;
+			height:100px;
+			float:left;
+			margin-left:400px;
+		}
+		.buttom p{
+			margin :10px;
+		}
+		.buttom_font{
+			width:1000px;
+			height:100px;
+			text-align: center;
+			margin:10px auto;
+			color: aliceblue;
+			font-weight: 500;
+		}
+		
